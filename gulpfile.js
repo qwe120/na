@@ -2,7 +2,7 @@
  * @Author: zhangzirui
  * @Date: 2018-11-05 08:28:31
  * @Last Modified by: zhangzirui
- * @Last Modified time: 2018-11-05 09:15:05
+ * @Last Modified time: 2018-11-05 09:22:09
  */
 
 // 引入
@@ -52,12 +52,12 @@ gulp.task('server', function () {
                     if (req.url === '/favicon.ico'){
                         return res.end('');
                     }
-                    var pathname = url.parse('req.url').pathname;
+                    var pathname = url.parse(req.url).pathname;
                     if (/^\/api/.test(pathname)) {
 
                     } else {
                         pathname = pathname === '/' ? 'index.html' : pathname;
-                        res.end(fs.readFileSync(path(__dirname, 'src', pathname)));
+                        res.end(fs.readFileSync(path.join(__dirname, 'src', pathname)));
                     }
                 }]
             }))
