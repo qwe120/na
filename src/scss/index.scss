@@ -33,43 +33,51 @@ input, button{
     border:0;
     outline: none;
     line-height: 35px;
-    text-align: center;
     background: #fff;
 }
 
 button{
     width: 100px;
-    height: 35px;
+    height: 37px;
     overflow: hidden;
     color: #fff;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
 }
 input{
     @include flex;
     height: 35px;
     border-right: 1px solid #ccc;
+    padding-left: 20px;
 }
 
 .btn1{
     background: #E0E0E0;
     color: #55557B;
+    border: 1px solid #E0E0E0;
 }
 
 .btn2{
     background: #09365F;
+    border: 1px solid #09365F;
 }
 
 .btn3{
     background: #8A9E41;
+    border: 1px solid #8A9E41;    
 }
 
 .btn4{
     background: #A21252;
+    border: 1px solid #A21252;    
 }
 
 .btn5{
     background: #EA5F13;
+    border: 1px solid #EA5F13;    
 }
 
 .btn6{
     background: #333333;
+    border: 1px solid #333333;    
 }
